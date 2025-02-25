@@ -40,6 +40,7 @@ int main() {
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
     head->next->next->next->next = new Node(50);
+    head->next->next->next->next->next = new Node(60);
 
     // Example of traversing the node and printing
     traverseList(head);
