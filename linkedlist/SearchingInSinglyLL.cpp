@@ -22,18 +22,18 @@ public:
 bool searchKey(Node* head, int key) {
 
     // Initialize curr with the head of linked list
-    Node* curr = head;
+    //                                                 Node* curr = head;
 
-    // Iterate over all the nodes
-    while (curr != NULL) {
+    // Iterate over all the nodes(
+    while (head != nullptr) {           //OR        while(curr!=NULL)
 
         // If the current node's value is equal to key,
         // return true
-        if (curr->data == key)
+        if (head->data == key)
             return true;
 
         // Move to the next node
-        curr = curr->next;
+        head = head->next;
     }
 
     // If there is no node with value as key, return false
@@ -52,9 +52,9 @@ int main() {
     head->next->next->next->next = new Node(10);
 
       // Key to search in the linked list
-      int key = 140;
+      int key = 13;
   
-    if (searchKey(head, key))
+   if( searchKey(head, key))
         cout << "Yes";
     else
         cout << "No";
